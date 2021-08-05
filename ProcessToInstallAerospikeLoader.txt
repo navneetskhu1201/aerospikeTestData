@@ -1,0 +1,12 @@
+Running the Aerospike Loader
+
+Install aerospike Loader
+    1. $ git clone https://github.com/aerospike/aerospike-loader.git
+    2. cd aerospike-loader
+To build this project we will need maven
+  Install maven : "brew install maven"
+  Then build the project using ./build
+Make sure you are inside aerospike-loader directory to run the below command.
+Command to run the loader : ./run_loader -h localhost -v -c Path/To/PracticeKotlin/aerospikeCustomer.json Path/To/PracticeKotlin/aerospikeData.dsv
+
+Ex : ./run_loader -h localhost -v -c /Users/navneet.singh/PracticeKotlin/aerospikeCustomer.json /Users/navneet.singh/PracticeKotlin/aerospikeData.dsv
