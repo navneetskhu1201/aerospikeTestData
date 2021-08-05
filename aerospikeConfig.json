@@ -1,0 +1,27 @@
+{
+  "version" : "2.0",
+  "dsv_config": { "delimiter": "," , "n_columns_datafile": 5, "header_exist": true},
+
+  "mappings": [
+    {
+      "key": {"column_name":"name", "type": "string"},
+
+      "set": "customers",
+
+      "bin_list": [
+        {"name": "Name",
+          "value": { "column_name": "Name", "type" : "String"}
+        },
+        {"name": "Phone_Number",
+          "value": { "column_name": "Phone_Number", "type" : "string"}
+        },
+        {"name": "Date_of_Birth",
+          "value": { "column_name": "Date_of_Birth", "type" : "string"}
+        },
+        {"name": "PAN",
+          "value": { "column_name": "PAN", "type" : "string"}
+        }
+      ]
+    }
+  ]
+}
