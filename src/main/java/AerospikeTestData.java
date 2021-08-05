@@ -4,17 +4,14 @@ import org.apache.commons.text.RandomStringGenerator;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Locale;
-import java.util.Random;
-import java.util.SimpleTimeZone;
 
-public class Practice {
+public class AerospikeTestData {
 
     public static String generatePan() {
-        return String.valueOf(randomCharString(5) +
+        return randomCharString(5) +
                 randomFourDigitNum(4) +
-                randomCharString(1));
+                randomCharString(1);
     }
 
     private static String randomCharString(int length) {
@@ -41,7 +38,7 @@ public class Practice {
         fileWriter.close();
     }
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         writeIntoCsv();
     }
 
